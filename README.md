@@ -30,6 +30,8 @@ $ openssl genrsa -out private.key 2048   (AWS only takes 2048)
 
 $ openssl req -new -x509 -key private.key -sha256 -out certificate.pem -days 730
 
+certificate.pem and private.key files are generated
+
 To examine cert
 $ openssl x509 -in certificate.pem -text -noout
 
